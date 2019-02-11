@@ -1,0 +1,27 @@
+version:                     '3'
+
+services:
+
+  blog:
+    image:                   wordpress:latest
+    restart:                 always
+    volumes:                 ['./blog/:/var/www/html']
+    ports:
+      - '8000:80'
+    networks:
+      - wpsite
+
+  treasure-chest-foods-website:
+    image:                   wordpress:latest
+    restart:                 always
+    volumes:                 ['./treasure-chest-foods-website/:/var/www/html']
+    ports:
+      - '8100:80'
+    networks:
+      - wpsite
+
+networks:
+  wpsite:
+
+volumes:
+  db_data:

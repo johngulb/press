@@ -1,0 +1,6 @@
+[submodule "blog"]
+	path = blog
+	url = https://github.com/johngulb/blog
+[submodule "treasure-chest-foods-website"]
+	path = treasure-chest-foods-website
+	url = https://github.com/johngulb/treasure-chest-foods-website
